@@ -129,7 +129,7 @@ main {
     grid-template-areas: 
     "photo title title" 
     "photo watchlist watchlist"
-    "photo plot plot";  
+    "plot plot plot";  
     gap: 1.4em;
     margin-bottom: 2em; 
     color: #FFF;
