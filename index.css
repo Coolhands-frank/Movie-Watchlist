@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    font-family: Inter;
+    font-style: normal;
+}
+
+section {
+    background-image: url("./image/image36.png");
+    background-size: cover;
+    background-color: black;
+}
+
+/* for index.html */
+.head-container {
+    color: white;
+    display: flex;
+    height: 45vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.81em;
+}
+
+.head-container h2 {
+    font-size: 2.6rem;
+    font-weight: 800; /* 55.556% */
+    letter-spacing: -1.926px;
+}
+
+.redirect-btn {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.redirect-btn:hover,
+.add-watchlist:hover,
+.search-btn:hover,
+.go-search-movies:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+form {
+    margin-top: -1.2em;
+    display: flex;
+    justify-content: center;
+    color: #A5A5A5;
+}
+
+form span {
+    display: flex;
+    align-items: center;
+    background-color: #2E2E2F;
+    border-radius: 6px 0px 0px 6px;
+    padding: 0 1em;
+}
+
+input {
+    padding: 0.56em 0.2em;
+    align-items: center;
+    background-color: #2E2E2F;
+    width: 50%;
+    border: none;
+    color: #A5A5A5;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+.search-btn {
+    background: #4B4B4B;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+    padding: 0.56em 1em;
+    align-items: center;
+    color: white;
+}
+
+.redirect-btn:active, 
+.add-watchlist:active,
+.search-btn:active
+ {
+    color: white;
+}
+
+main {
+    margin-top: 2.5em;
+}
+
+#movie-container {
+    padding: 0em 2.75em;
+}
+
+.start-exploring-div {
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    color: #2E2E2F; 
+}
+
+.film {
+    font-size: 5rem;
+}
+
+.start-exploring {
+    padding-top: 0.5em;
+    font-size: 1.13rem;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.movie-detail-placement {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "photo title title" 
+    "photo watchlist watchlist"
+    "photo plot plot";  
+    gap: 1.4em;
+    margin-bottom: 2em; 
+    color: #FFF;
+    border-bottom: 1.5px solid #2C2C2C;
+    padding-bottom: 2em;
+}
+
+.image {
+    grid-area: photo;
+    width: 100%;
+}
+
+.title-rating {
+    grid-area: title;
+    font-size: 1.13rem;
+    font-weight: 500;
+    line-height: 20px;
+    align-self: center;
+}
+
+.star-color {
+    color: gold;
+}
+
+.title-rating span {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 0.5em;
+}
+
+.runtime-genre-watchlist {
+    display: flex;
+    align-items: center;
+    grid-area: watchlist;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 20px;
+    gap: 1.2em;
+}
+
+
+.add-watchlist {
+    display: flex;
+    gap: 0.4em;
+    align-items: center;
+}
+
+.add-btn-icon {
+    font-size: 1.3em;
+}
+
+.plot {
+    grid-area: plot;
+    color: #A5A5A5;
+    font-size: 0.86rem;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.no-movie-response {
+    justify-self: center;
+    color: #787878;
+    text-align: center;
+    font-size: 1.13rem;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+/* for watchlist.html */
+.no-movie-search-div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.go-search-movies {
+    display: flex;
+    gap: 0.4em;
+    align-self: center;
+    color: white;
+    padding-top: 1em;
+    text-decoration: none;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+
+    .head-container h2 {
+        font-size: 3.4rem;
+        font-weight: 800; /* 55.556% */
+        letter-spacing: -1.926px;
+    }
+
+    .redirect-btn {
+        font-size: 1.3rem;
+    }
+
+    #movie-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "area1 area1";
+        gap: 20px;
+    }
+
+    .movie-detail-placement {  
+        gap: 1em;
+        grid-template-areas: 
+        "photo title title" 
+        "photo watchlist watchlist"
+        "plot plot plot";  
+        margin-bottom: 1.5em;
+    }
+
+    .start-exploring-div {
+        grid-area: area1;
+    }
+
+    .no-movie-search-div {
+        grid-area: area1;
+    }
+}
+
+@media (min-width: 1200px) {
+    #movie-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "area1 area1 area1";
+        gap: 20px;
+    }
+
+}
