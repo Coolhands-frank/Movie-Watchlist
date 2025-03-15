@@ -1,21 +1,44 @@
-# co51c4a38b40ed93d683b8383
+# Movie Watchlist App
+Movie Watchlist is a web application that allows users to search for movies using the OMDB API, display search results, and add selected movies to a personal watchlist.
 
-Quick start:
+## Features
+- **Search Movies** by title using the OMDB API
+- **Display Movie Details** including poster, title, and year
+- **Add Movies to Watchlist** for later viewing
+- **Remove Movies from Watchlist** as needed
+- **Simple and Responsive UI** for easy navigation 
 
-```
-$ npm install
-$ npm start
-````
+## Tech Stack
+- **Frontend:** HTML, CSS, JavaScript
+- **API Handling:** Fetch API (OMDB API)
+- **Local Storage:** To persist the watchlist data
 
-Head over to https://vitejs.dev/ to learn more about using vite
-## About Scrimba
+## Installation
+To set up the project locally, follow these steps:
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+1. Clone the repository:
+   ```sh
+   https://github.com/Coolhands-frank/Movie-Watchlist.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd movie-watchlist
+   ```
+3. Open index.html in your browser or use Live Server in VS Code.
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+# Usage
+1. Enter a movie title in the search bar. 
+2. Click the **Search** button to fetch results from OMDB.
+3. Click **Add to Watchlist** to save a movie. 
+4. View your watchlist and remove movies if needed.
 
-Happy Coding!
+## Deployment
+To deploy the project:
+- Use **GitHub Pages**, **Render**, **Netlify**, or **Vercel** for easy hosting.
+
+## Contact
+For any inquiries, reach out via:
+- **Email:** elendufranklin66@gmail.com
+
+---
+Enjoy building your movie watchlist
